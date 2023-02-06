@@ -20,6 +20,11 @@ router.post("/mariage", async (req, res) => {
   });
   // Return the generated text as the response
   res.header("Content-Type", "text/plain");
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://wedding-speech.vercel.app/"
+  );
+
   res.json(response.data.choices[0].text);
   //   res.send(response.data.choices[0].text);
   // res.send(response.data.choices[0].text);
