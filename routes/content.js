@@ -22,7 +22,7 @@ router.post("/mariage", async (req, res) => {
   res.header("Content-Type", "text/plain");
   res.header(
     "Access-Control-Allow-Origin",
-    "https://wedding-speech.vercel.app/"
+    "https://wedding-speech.vercel.app"
   );
 
   res.json(response.data.choices[0].text);
