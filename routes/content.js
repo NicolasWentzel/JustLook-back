@@ -21,7 +21,7 @@ router.post("/mariage", async (req, res) => {
   // Return the generated text as the response
   res.header("Content-Type", "text/plain");
   res.json(response.data.choices[0].text);
-
+  //   res.send(response.data.choices[0].text);
   // res.send(response.data.choices[0].text);
   console.log(response.data.choices);
 });
